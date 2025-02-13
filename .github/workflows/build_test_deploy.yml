@@ -22,7 +22,11 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build the project
-      run: npm run build --if-present &
+      run: npm run build --if-present 
+    - name: Run Client
+      run: npm start &
+    - name: Run Server
+      run: nmp run server &
     - name: Install playwright
       run: npx playwright install 
     - name: Run tests
