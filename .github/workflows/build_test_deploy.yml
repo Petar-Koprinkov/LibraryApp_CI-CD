@@ -21,10 +21,8 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
-    - name: Build the project
-      run: npm run build --if-present 
     - name: Run Client
-      run: npm start &
+      run: npm run start &
     - name: Run Server
       run: nmp run server &
     - name: Install playwright
