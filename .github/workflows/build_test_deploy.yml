@@ -24,8 +24,8 @@ jobs:
     - name: Run Client
       run: npm run start &
     - name: Run Server
-      run: nmp run server &
+      run: npm run server &
     - name: Install playwright
       run: npx playwright install 
     - name: Run tests
-      run: npm test
+      run: npm run test
